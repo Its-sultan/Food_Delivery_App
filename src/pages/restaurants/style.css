@@ -1,0 +1,9 @@
+@import "tailwindcss";
+
+.restaurant-card {
+    border: 1px solid var(--border);
+}
+
+.search-box input:focus {
+    box-shadow: 0 0 20px rgba(249, 115, 22, 0.1);
+}
