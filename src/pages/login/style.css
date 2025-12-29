@@ -1,0 +1,13 @@
+@import "tailwindcss";
+
+.auth-input {
+    @apply w-full px-6 py-4 bg-muted border border-border rounded-2xl font-bold outline-none transition-all focus:border-primary focus:ring-4 focus:ring-primary/10;
+}
+
+.auth-submit {
+    @apply mt-4 bg-primary text-white font-black py-4 rounded-2xl w-full shadow-xl shadow-primary/20 hover:scale-105 transition-all uppercase tracking-widest;
+}
+
+.auth-page {
+    @apply flex min-h-screen bg-background overflow-hidden;
+}

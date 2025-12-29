@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sign Up | FoodExpress</title>
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#f97316',
+                        background: '#020617'
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        .auth-input {
+            width: 100%;
+            padding: 12px;
+            border-radius: 10px;
+            border: 2px solid #e5e7eb;
+            outline: none;
+        }
+
+        .auth-input:focus {
+            border-color: #f97316;
+            box-shadow: 0 0 0 4px rgba(249, 115, 22, 0.2);
+        }
+
+        .auth-submit {
+            width: 100%;
+            background: #f97316;
+            color: white;
+            padding: 14px;
+            border-radius: 12px;
+            font-weight: bold;
+            margin-top: 20px;
+            transition: all 0.3s ease;
+        }
+
+        .auth-submit:hover {
+            background: #ea580c;
+            transform: translateY(-2px);
+        }
+    </style>
+</head>
+
+<body class="bg-background text-white">
+
+<div class="flex min-h-screen overflow-hidden">
+
+    <!-- LEFT SIDE (DESIGN PANEL) -->
+    <div class="hidden lg:flex w-1/2 bg-slate-950 items-center justify-center p-20 relative">
+        <div class="absolute inset-0 bg-gradient-to-br from-primary/20 to-slate-950"></div>
+
+        <div class="relative z-10 max-w-xl">
+            <div class="flex items-center gap-3 mb-10">
+                <span class="text-6xl">🍊</span>
+                <h2 class="text-4xl font-black tracking-tighter">
+                    Food<span class="text-primary italic">Express</span>
+                </h2>
+            </div>
+
+            <h1 class="text-6xl font-black mb-6 leading-tight">
+                Join the <br>
+                <span class="italic underline decoration-primary/40">Feast!</span>
+            </h1>
+
+            <p class="text-lg text-gray-300">
+                Create an account and enjoy fast, delicious food delivered straight to your door.
+            </p>
+        </div>
+    </div>
+
+    <!-- RIGHT SIDE (FORM) -->
+    <div class="w-full lg:w-1/2 flex items-center justify-center px-8">
+        <div class="w-full max-w-md">
+
+            <h2 class="text-4xl font-black mb-2">Create Account</h2>
+            <p class="text-gray-400 mb-8">Sign up to get started</p>
+
+            <form>
+                <div class="mb-5">
+                    <label class="block mb-2 font-bold">Full Name</label>
+                    <input type="text" class="auth-input" placeholder="John Doe" required>
+                </div>
+
+                <div class="mb-5">
+                    <label class="block mb-2 font-bold">Email Address</label>
+                    <input type="email" class="auth-input" placeholder="example@email.com" required>
+                </div>
+
+                <div class="mb-5">
+                    <label class="block mb-2 font-bold">Password</label>
+                    <input type="password" class="auth-input" placeholder="••••••••" required>
+                </div>
+
+                <button type="submit" class="auth-submit">
+                    Get Started <i class="fa-solid fa-arrow-right ml-2"></i>
+                </button>
+            </form>
+
+            <p class="mt-10 text-center text-gray-400 text-sm">
+                Already a member?
+                <a href="#" class="text-primary font-bold underline ml-1">Login</a>
+            </p>
+
+        </div>
+    </div>
+
+</div>
+
+</body>
+</html>
+
