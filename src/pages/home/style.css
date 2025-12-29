@@ -1,0 +1,36 @@
+@import "tailwindcss";
+
+@keyframes slowZoom {
+    0% {
+        transform: scale(1.05);
+    }
+
+    50% {
+        transform: scale(1.15);
+    }
+
+    100% {
+        transform: scale(1.05);
+    }
+}
+
+.animate-slow-zoom {
+    animation: slowZoom 30s ease-in-out infinite;
+}
+
+.category-card {
+    @apply relative overflow-hidden transition-all duration-500 hover:-translate-y-3;
+}
+
+.category-card::before {
+    content: '';
+    @apply absolute inset-0 bg-primary/0 transition-colors duration-500;
+}
+
+.category-card:hover::before {
+    @apply bg-primary/5;
+}
+
+.category-card .icon-wrapper {
+    @apply w-20 h-20 mx-auto flex items-center justify-center rounded-[2rem] bg-muted/50 mb-4 transition-all duration-500 group-hover:bg-primary group-hover:text-white group-hover:rotate-12;
+}

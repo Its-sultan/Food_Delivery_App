@@ -1,0 +1,95 @@
+<div class="home-page">
+    <!-- Hero Section -->
+    <section class="hero min-h-[90vh] flex items-center justify-center relative overflow-hidden bg-slate-950">
+        <!-- Background Image with Overlay -->
+        <div class="absolute inset-0 z-0">
+            <img src="/src/assets/hero-bg.png" class="w-full h-full object-cover opacity-60 scale-105 animate-slow-zoom">
+            <div class="absolute inset-0 bg-gradient-to-b from-slate-950/80 via-transparent to-slate-950/90"></div>
+        </div>
+        <div class="container relative z-10 text-center">
+            <h1 class="text-7xl md:text-9xl text-white mb-8 animate-fade-in tracking-tighter hero-title drop-shadow-2xl">
+                Fastest Food <br/> <span class="text-primary italic">Delivery!</span>
+            </h1>
+            <p class="text-2xl md:text-3xl font-bold mb-12 max-w-2xl mx-auto italic hero-subtitle leading-relaxed text-white">
+                Delicious meals from your favorite restaurants, delivered right to your doorstep in minutes.
+            </p>
+            <div class="flex flex-col sm:flex-row items-center justify-center gap-6">
+                <a href="/restaurants" data-link class="bg-primary text-white px-12 py-6 rounded-2xl font-black uppercase tracking-widest shadow-2xl hover:scale-110 hover:rotate-2 transition-all">
+                    Order Now
+                </a>
+                <button class="bg-white/10 backdrop-blur-xl text-white px-12 py-6 rounded-2xl font-black uppercase tracking-widest border border-white/20 hover:bg-white/20 transition-all">
+                    Learn More
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Popular Categories -->
+    <section class="container py-32">
+        <div class="flex flex-col items-center mb-16">
+            <span class="text-primary font-black uppercase tracking-[0.3em] text-sm mb-4">Explore flavors</span>
+            <h2 class="text-5xl md:text-6xl font-black tracking-tighter text-center">Popular <span class="text-primary italic">Categories</span></h2>
+        </div>
+        <div id="categories-grid" class="grid grid-cols-2 md:grid-cols-5 gap-8">
+            <!-- Dynamic Categories Injected Here -->
+        </div>
+    </section>
+
+    <!-- How It Works -->
+    <section class="bg-muted/30 py-32 rounded-[5rem] mb-32">
+        <div class="container text-center">
+            <h2 class="text-5xl font-black mb-20 tracking-tighter">How It <span class="text-primary italic">Works</span></h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-16">
+                <div class="space-y-6">
+                    <div class="w-24 h-24 bg-white rounded-3xl flex items-center justify-center mx-auto shadow-xl text-4xl">🍕</div>
+                    <h3 class="text-2xl font-black">Choose Food</h3>
+                    <p class="text-muted-foreground font-medium italic">Select your favorite meal from hundreds of top-rated local restaurants.</p>
+                </div>
+                <div class="space-y-6">
+                    <div class="w-24 h-24 bg-white rounded-3xl flex items-center justify-center mx-auto shadow-xl text-4xl">🚚</div>
+                    <h3 class="text-2xl font-black">Quick Delivery</h3>
+                    <p class="text-muted-foreground font-medium italic">Our drivers are ready to pick up your order and deliver it in record time.</p>
+                </div>
+                <div class="space-y-6">
+                    <div class="w-24 h-24 bg-white rounded-3xl flex items-center justify-center mx-auto shadow-xl text-4xl">😋</div>
+                    <h3 class="text-2xl font-black">Enjoy Meal</h3>
+                    <p class="text-muted-foreground font-medium italic">Gather your friends or family and enjoy a hot, delicious meal!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Restaurants -->
+    <section class="container py-20 mb-32">
+        <div class="flex flex-col md:flex-row items-end justify-between mb-16 gap-4">
+            <div>
+                <span class="text-primary font-black uppercase tracking-[0.3em] text-sm mb-4">Curated for you</span>
+                <h2 class="text-5xl md:text-6xl font-black tracking-tighter">Featured <span class="text-primary italic">Spots</span></h2>
+            </div>
+            <a href="/restaurants" data-link class="text-primary font-black uppercase tracking-widest text-sm hover:translate-x-2 transition-transform flex items-center gap-2">
+                View All Restaurants <i class="fa-solid fa-arrow-right"></i>
+            </a>
+        </div>
+        <div id="featured-grid" class="grid grid-cols-1 md:grid-cols-3 gap-10">
+            <!-- Dynamic Restaurants Injected Here -->
+        </div>
+    </section>
+
+    <!-- Newsletter / CTA -->
+    <section class="container pb-32">
+        <div class="bg-slate-900 rounded-[4rem] p-16 md:p-24 relative overflow-hidden text-center">
+            <div class="absolute inset-0 opacity-20">
+                <div class="absolute top-10 left-10 text-6xl animate-bounce">🍔</div>
+                <div class="absolute bottom-10 right-10 text-6xl animate-pulse">🍕</div>
+            </div>
+            <div class="relative z-10 max-w-3xl mx-auto">
+                <h2 class="text-5xl md:text-7xl font-black text-white mb-8 tracking-tighter">Join the Food <span class="text-primary italic">Revolution</span></h2>
+                <p class="text-xl text-white/70 mb-12 italic font-medium">Get exclusive deals and the fastest delivery in your city. Download our app today!</p>
+                <div class="flex flex-col sm:flex-row items-center justify-center gap-6">
+                    <button class="bg-white text-slate-900 px-10 py-5 rounded-2xl font-black uppercase tracking-widest shadow-2xl hover:bg-primary hover:text-white transition-all">App Store</button>
+                    <button class="bg-white text-slate-900 px-10 py-5 rounded-2xl font-black uppercase tracking-widest shadow-2xl hover:bg-primary hover:text-white transition-all">Google Play</button>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
