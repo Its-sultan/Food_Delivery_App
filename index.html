@@ -18,6 +18,10 @@
                         muted: '#f1f5f9',
                         'muted-foreground': '#64748b',
                         border: '#e2e8f0',
+                    },
+                    borderRadius: {
+                        '4xl': '2rem',
+                        '5xl': '3rem',
                     }
                 }
             }
@@ -81,6 +85,32 @@
         }
         .animate-slow-zoom {
             animation: slowZoom 30s ease-in-out infinite;
+        }
+
+        /* Modern Animations */
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        @keyframes slideInBottom {
+            from { transform: translateY(1rem); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+        }
+        @keyframes slideInRight {
+            from { transform: translateX(2rem); opacity: 0; }
+            to { transform: translateX(0); opacity: 1; }
+        }
+        .animate-in {
+            animation-duration: 500ms;
+            animation-fill-mode: both;
+        }
+        .fade-in { animation-name: fadeIn; }
+        .slide-in-from-bottom-4 { animation-name: slideInBottom; }
+        .slide-in-from-right-8 { animation-name: slideInRight; }
+        .duration-700 { animation-duration: 700ms; }
+
+        .scale-hover {
+            @apply transition-transform duration-300 hover:scale-[1.02] active:scale-[0.98];
         }
     </style>
 </head>
