@@ -1,0 +1,9 @@
+@import "tailwindcss";
+
+.settings-input {
+    @apply w-full px-8 py-5 rounded-2xl bg-muted/30 border border-border/50 font-bold text-foreground outline-none transition-all focus:border-primary focus:bg-background focus:ring-4 focus:ring-primary/10 placeholder:text-muted-foreground/50;
+}
+
+.settings-input:disabled {
+    @apply opacity-50 cursor-not-allowed grayscale;
+}
