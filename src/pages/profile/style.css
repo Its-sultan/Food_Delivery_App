@@ -1,0 +1,10 @@
+@import "tailwindcss";
+
+.profile-page .glass {
+    border: 1px solid var(--border);
+}
+
+.profile-page .mx-auto {
+    margin-left: auto;
+    margin-right: auto;
+}

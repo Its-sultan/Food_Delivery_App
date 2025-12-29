@@ -1,0 +1,52 @@
+<div class="profile-page container py-20">
+    <div class="max-w-4xl mx-auto">
+        <div class="glass p-12 rounded-[3.5rem] flex flex-col md:flex-row items-center gap-12 shadow-2xl">
+            <div class="relative group">
+                <div id="profile-avatar" class="w-40 h-40 rounded-full bg-primary flex items-center justify-center text-white text-5xl font-black shadow-xl overflow-hidden ring-4 ring-white">
+                    <!-- Avatar Injected Here -->
+                </div>
+                <button class="absolute bottom-2 right-2 p-3 bg-white text-primary rounded-full shadow-lg hover:scale-110 transition-all">
+                    <i class="fa-solid fa-camera text-sm"></i>
+                </button>
+            </div>
+
+            <div class="flex-1 text-center md:text-left text-foreground">
+                <h1 id="profile-name" class="text-5xl font-black mb-2 tracking-tighter"></h1>
+                <p id="profile-email" class="text-muted-foreground font-bold text-lg mb-8 italic"></p>
+                
+                <div class="grid grid-cols-2 md:grid-cols-3 gap-6">
+                    <div class="bg-muted/50 p-6 rounded-3xl text-center">
+                        <span class="block text-3xl font-black text-primary mb-1">12</span>
+                        <span class="text-xs font-black uppercase tracking-widest text-muted-foreground">Orders</span>
+                    </div>
+                    <div class="bg-muted/50 p-6 rounded-3xl text-center">
+                        <span class="block text-3xl font-black text-primary mb-1">4.8</span>
+                        <span class="text-xs font-black uppercase tracking-widest text-muted-foreground">Rating</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="mt-12 grid grid-cols-1 md:grid-cols-2 gap-8">
+            <a href="/settings" data-link class="p-8 glass rounded-[2.5rem] flex items-center gap-6 hover:bg-primary/5 transition-all text-left group">
+                <div class="p-4 bg-primary/10 text-primary rounded-2xl group-hover:bg-primary group-hover:text-white transition-all">
+                    <i class="fa-solid fa-gear text-2xl"></i>
+                </div>
+                <div>
+                    <h4 class="text-xl font-black text-foreground">Preferences</h4>
+                    <p class="text-sm font-medium text-muted-foreground">Manage your app experience</p>
+                </div>
+            </a>
+
+            <button id="logout-btn" class="p-8 glass rounded-[2.5rem] flex items-center gap-6 hover:bg-red-500/5 transition-all text-left group">
+                <div class="p-4 bg-red-500/10 text-red-500 rounded-2xl group-hover:bg-red-500 group-hover:text-white transition-all">
+                    <i class="fa-solid fa-right-from-bracket text-2xl"></i>
+                </div>
+                <div>
+                    <h4 class="text-xl font-black text-foreground">Logout</h4>
+                    <p class="text-sm font-medium text-muted-foreground italic">Sign out of your account</p>
+                </div>
+            </button>
+        </div>
+    </div>
+</div>
