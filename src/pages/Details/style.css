@@ -1,0 +1,13 @@
+@import "tailwindcss";
+
+.detail-page .glass {
+    border: 1px solid var(--border);
+}
+
+.menu-item img {
+    transition: transform 0.5s ease;
+}
+
+.menu-item:hover img {
+    transform: scale(1.1);
+}
