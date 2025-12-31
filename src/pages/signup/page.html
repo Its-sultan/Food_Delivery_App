@@ -1,0 +1,55 @@
+<div class="auth-page flex min-h-screen bg-background overflow-hidden">
+    <!-- Left Pane -->
+    <div class="hidden lg:flex w-1/2 bg-slate-950 relative items-center justify-center p-20 overflow-hidden">
+        <div class="absolute inset-0 z-0">
+            <img src="/src/assets/hero-bg.png" class="w-full h-full object-cover opacity-20 contrast-125 scale-110">
+            <div class="absolute inset-0 bg-gradient-to-br from-primary/20 via-transparent to-slate-950/80"></div>
+        </div>
+
+        <div class="relative z-10 text-white max-w-xl">
+            <div class="flex items-center gap-3 mb-10">
+                <span class="text-6xl drop-shadow-2xl">🍊</span>
+                <h2 class="text-4xl font-black tracking-tighter">Food<span class="text-primary italic">Express</span></h2>
+            </div>
+            <h1 class="text-6xl md:text-7xl font-black mb-8 leading-tight drop-shadow-xl">
+                Join the <br/> <span class="italic underline underline-offset-8 decoration-primary/30">Feast!</span>
+            </h1>
+            <p class="text-xl text-white/80 font-medium leading-relaxed italic">
+                "Create an account today and unlock a world of gourmet delivery and exclusive offers."
+            </p>
+        </div>
+    </div>
+
+    <!-- Right Pane -->
+    <div class="w-full lg:w-1/2 flex items-center justify-center p-8 md:p-16 relative">
+        <div class="w-full max-w-md">
+            <div class="mb-12">
+                <h2 class="text-4xl font-black mb-3 tracking-tight">Become a <span class="text-primary italic">Member.</span></h2>
+                <p class="text-muted-foreground font-medium italic">Join thousands of foodies enjoying premium delivery.</p>
+            </div>
+
+            <form id="signup-form" class="space-y-6">
+                <div class="space-y-2">
+                    <label class="text-xs font-black uppercase tracking-widest text-muted-foreground ml-1">Full Name</label>
+                    <input type="text" required id="name" class="auth-input" placeholder="The Chef">
+                </div>
+                <div class="space-y-2">
+                    <label class="text-xs font-black uppercase tracking-widest text-muted-foreground ml-1">Email Address</label>
+                    <input type="email" required id="email" class="auth-input" placeholder="chef@foodexpress.com">
+                </div>
+                <div class="space-y-2">
+                    <label class="text-xs font-black uppercase tracking-widest text-muted-foreground ml-1">Password</label>
+                    <input type="password" required id="password" class="auth-input" placeholder="••••••••">
+                </div>
+                
+                <button type="submit" class="auth-submit">
+                    Get Started <i class="fa-solid fa-arrow-right ml-2 text-sm"></i>
+                </button>
+            </form>
+
+            <p class="mt-10 text-center text-muted-foreground font-bold italic lowercase">
+                Already a member? <a href="/login" data-link class="text-primary not-italic font-black border-b-2 border-primary/20 hover:border-primary transition-all pb-1 uppercase tracking-widest text-xs px-2">Login</a>
+            </p>
+        </div>
+    </div>
+</div>
